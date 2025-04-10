@@ -79,8 +79,20 @@ export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
                 >
                   {currentTrackUrl === song.url && error?.url === song.url ? error.message : song.name}
                 </td>
-                <td className="py-2 truncate">{song.album}</td>
-                <td className="py-2 text-right">{formatDuration(song.duration)}</td>
+                <td
+                  className={`py-2 truncate ${
+                    currentTrackUrl === song.url && error?.url === song.url && 'text-red-400'
+                  }`}
+                >
+                  {song.album}
+                </td>
+                <td
+                  className={`py-2 ${
+                    currentTrackUrl === song.url && error?.url === song.url && 'text-red-400'
+                  } text-right`}
+                >
+                  {formatDuration(song.duration)}
+                </td>
               </tr>
             )
           })}
