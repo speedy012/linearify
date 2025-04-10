@@ -1,36 +1,17 @@
-# Linear Media Player
+# 🎵 Linearify
 
-Hey, thanks for taking the time to work on this exercise. We're excited to see what you come up with –
-the goal is to create an audio player for playing a predefined playlist of audio files. Think of it
-like a stripped-down version of Spotify or the classic Winamp.
+Welcome to **Linearify**, a web-based music player that lets you stream cool tunes right from your browser! Built for smooth playback and a clean, intuitive UI.
+
+<img width="1132" alt="linearify" src="https://github.com/user-attachments/assets/037430c9-87cd-499c-b4f3-5a77e30beb9c" />
 
 ### Getting started
 
-Clone this repo which was created _just for you_, make it yours and let us know once the project is complete by pushing
-your commits and replying through email. 
-
-You can use `npm` to install the dependencies and run the basic React project. Feel free to add any additional libraries 
-or frameworks you need.
+First, clone the repository and install dependencies:
 
 ```bash
 npm install
 npm run dev
 ```
-
-### Requirements
-
-We'd like to see a working media player that can play through a playlist of audio files (included), display info on the
-currently playing track and supporting basic functionality like play/pause, next track, etc. Beyond that, feel free to get
-creative with the design and functionality.
-
-Plan on spending 2-4 hours to complete this exercise.
-
-Please update this README to include a screenshot of the completed exercise at the top.
-
-### Playlist data
-
-The playlist data is stored in `src/data/playlists.json`. It includes a list of audio files and some associated metadata,
-you can import the json file directly with no need for network requests.
 
 ### Attribution
 
