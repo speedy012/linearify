@@ -64,7 +64,7 @@ export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
                   clearError()
                 }}
               >
-                <td className="py-2">
+                <td className="py-2 pr-1.5">
                   {currentTrackUrl === song.url && error?.url === song.url ? (
                     <img src={alert} alt="" className="h-5 w-5" />
                   ) : (
