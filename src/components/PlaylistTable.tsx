@@ -19,7 +19,7 @@ const formatDuration = (seconds: number): string => {
 export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
   const { isPlaying, setIsPlaying, setCurrentTrackUrl, currentTrackUrl, error, clearError } = useControls()
   return (
-    <div className="bg-gradient-to-b from-purple-900 to-black text-white p-6 rounded-lg w-full max-w-5xl overflow-x-auto">
+    <div className="bg-gradient-to-b from-purple-900 to-black text-white p-6 rounded-lg w-full max-w-5xl">
       <div className="w-full text-left table-auto mb-6">
         <button
           className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-200"
@@ -73,21 +73,21 @@ export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
                 </td>
 
                 <td
-                  className={`py-2 truncate ${
+                  className={`p-2 truncate overflow-hidden text-ellipsis whitespace-nowrap max-w-[150px] ${
                     currentTrackUrl === song.url && error?.url === song.url && 'text-red-400'
                   }`}
                 >
                   {currentTrackUrl === song.url && error?.url === song.url ? error.message : song.name}
                 </td>
                 <td
-                  className={`py-2 truncate ${
+                  className={`p-2 truncate overflow-hidden text-ellipsis whitespace-nowrap max-w-[100px] ${
                     currentTrackUrl === song.url && error?.url === song.url && 'text-red-400'
                   }`}
                 >
                   {song.album}
                 </td>
                 <td
-                  className={`py-2 ${
+                  className={`p-4${
                     currentTrackUrl === song.url && error?.url === song.url && 'text-red-400'
                   } text-right`}
                 >

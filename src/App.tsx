@@ -33,7 +33,7 @@ export const App = () => {
   }
 
   return (
-    <div className="text-2xl flex flex-col items-center justify-center bg-black">
+    <div className="text-2xl flex flex-col items-center justify-center bg-black px-1 ">
       <h1 className="text-3xl text-white font-bold py-6">Linearify</h1>
 
       <PlaylistTable songs={tracks} />
