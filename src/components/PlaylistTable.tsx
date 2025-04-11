@@ -43,9 +43,9 @@ export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
         <thead className="border-b border-gray-600 text-sm text-gray-300">
           <tr>
             <th className="w-10">#</th>
-            <th className="w-1/2">Title</th>
-            <th>Album</th>
-            <th className="text-right">⏱</th>
+            <th className="w-1/2 px-2">Title</th>
+            <th className="px-2">Album</th>
+            <th className="text-right px-2">⏱</th>
           </tr>
         </thead>
         <tbody className="text-sm text-gray-200">
@@ -64,7 +64,7 @@ export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
                   clearError()
                 }}
               >
-                <td className="py-2 pr-1.5">
+                <td className="py-2">
                   {currentTrackUrl === song.url && error?.url === song.url ? (
                     <img src={alert} alt="" className="h-5 w-5" />
                   ) : (
@@ -87,7 +87,7 @@ export const PlaylistTable = ({ songs }: PlaylistTableProps) => {
                   {song.album}
                 </td>
                 <td
-                  className={`p-4${
+                  className={`px-1 ${
                     currentTrackUrl === song.url && error?.url === song.url && 'text-red-400'
                   } text-right`}
                 >
